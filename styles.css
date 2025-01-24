@@ -1,0 +1,75 @@
+/* universal selector  */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;  
+}
+
+a {
+    font-size: 25px;
+}
+
+.nav h1 {
+    font-size: 45px;
+    color: blue;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    border: 2px solid white;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}   
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.metadata p {
+    font-size: 25px;
+}
+
+.flex h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.metadata {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* 
+    width = 200px
+    8 frac
+    200 // 8 = 25px
+    1st row => 25 * 4 = 100px
+    2nd row => 3 * 25 = 75px
+    4 cols with 1fr 
+    100 // 4  = 25
+*/
